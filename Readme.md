@@ -8,9 +8,9 @@ This is a Dockerized, end-to-end data engineering project that ingests, processe
 ## Project Goals
 
 * Schedule weekly data ingestion and transformation jobs via Airflow
-* Store cleaned datasets as partitioned Parquet files in MinIO
+* Store cleaned datasets as partitioned Parquet files in local storage
 * Simulate real-time alerts for critical ride patterns
-* Visualize insights with Metabase dashboards
+* Visualize heatmap with plotly dashboards
 * Deploy the entire stack using Docker Compose
 
 
