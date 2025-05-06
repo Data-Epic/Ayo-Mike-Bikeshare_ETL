@@ -2,7 +2,7 @@
 
 The Bikesharing ETL Pipeline project is a data engineering solution designed to automate the process of extracting, transforming, and loading (ETL) Capital Bikeshare trip data. The goal is to build a comprehensive data pipeline that handles large-scale data processing, enables real-time data analysis, and provides an interactive platform for data visualization.
 
-This is a Dockerized, end-to-end data engineering project that ingests, processes, and visualizes Capital Bikeshare data. It features a scheduled ETL pipeline, real-time data flagging, partitioned storage in MinIO (S3), and interactive dashboards powered by Metabase.
+This is a Dockerized, end-to-end data engineering project that ingests, processes, and visualizes Capital Bikeshare data. It features a scheduled ETL pipeline, real-time data flagging, partitioned storage in gads/output/, and interactive dashboards powered by Plotly.
 
 
 ## Project Goals
@@ -61,7 +61,7 @@ cd bikeshare_etl
 ### 2. Build and Launch Containers
 
 ```bash
-docker build -t dev_apache_airflow:2.8.4 .
+docker build -t dev_apache_airflow:3.0.0
 docker-compose up --build -d
 ```
 
