@@ -47,7 +47,7 @@ Docker1/
 ```
 
 ## Workflow
-![Workflow]()
+![Workflow](https://github.com/Data-Epic/Ayo-Mike-Bikeshare_ETL/blob/dev/bikeshare_etl_v3-graph.png)
 
 ## Setup Instructions
 
