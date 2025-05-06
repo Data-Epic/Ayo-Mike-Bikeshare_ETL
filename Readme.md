@@ -88,23 +88,22 @@ docker-compose up --build -d
 
 
 ## Data Visualization (Plotly)
-![Workflow](https://github.com/Data-Epic/Ayo-Mike-Bikeshare_ETL/blob/dev/dags/heatmap/heatmap.html)
+![Workflow](https://github.com/Data-Epic/Ayo-Mike-Bikeshare_ETL/blob/dev/heatmap.png)
 * Create visualizations
 
 ## Output Data
+![Workflow](https://github.com/Data-Epic/Ayo-Mike-Bikeshare_ETL/blob/dev/directories.png)
 * Cleaned and transformed `.parquet` files
 * Partitioned by:
   * `member_casual`
   * `week_number`
-* Stored inside `dags/output/` and in MinIO
+* Stored inside `dags/output/` and in local sorage
 
-## Showcase
 
 ### Airflow Dags
-![Workflow]()
+![Workflow](https://github.com/Data-Epic/Ayo-Mike-Bikeshare_ETL/blob/dev/stream_it.png)
 
 
-### Metabase Dashbord
-![dashboard]()
+
 
 
