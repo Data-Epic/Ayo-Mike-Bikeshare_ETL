@@ -73,7 +73,7 @@ docker-compose up --build -d
 ## Running the ETL Pipeline
 
 1. Go to Airflow UI at `http://localhost:8080`
-2. Trigger the DAG: `bikeshare_etl_pipeline`
+2. Trigger the DAG: `bikeshare_etl`
 3. Monitor each task and view logs
 
 
