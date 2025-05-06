@@ -36,9 +36,7 @@ Docker1/
 │   │   └── data
         └──heatmap
         └──output #where the partition lies
-        └──bikeshare_etl.py
-
-├── postgres/                                            
+        └──bikeshare_etl.py                                        
 ├── docker-compose.yml             
 ├── Dockerfile                    
 ├── .env                               
