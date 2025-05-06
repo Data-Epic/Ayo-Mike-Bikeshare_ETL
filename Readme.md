@@ -54,8 +54,7 @@ Docker1/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Data-Epic/bikesharing_etl_adedoyin.git
-cd bikeshare_etl
+https://github.com/Data-Epic/Ayo-Mike-Bikeshare_ETL.git
 ```
 
 ### 2. Build and Launch Containers
@@ -89,6 +88,7 @@ docker-compose up --build -d
 
 
 ## Data Visualization (Plotly)
+(https://github.com/Data-Epic/Ayo-Mike-Bikeshare_ETL/blob/dev/dags/heatmap/heatmap.html)
 * Create visualizations
 
 ## Output Data
