@@ -88,7 +88,7 @@ docker-compose up --build -d
 
 
 ## Data Visualization (Plotly)
-(https://github.com/Data-Epic/Ayo-Mike-Bikeshare_ETL/blob/dev/dags/heatmap/heatmap.html)
+![Workflow](https://github.com/Data-Epic/Ayo-Mike-Bikeshare_ETL/blob/dev/dags/heatmap/heatmap.html)
 * Create visualizations
 
 ## Output Data
