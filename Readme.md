@@ -1,0 +1,110 @@
+# Bikesharing ETL Pipeline
+
+The Bikesharing ETL Pipeline project is a data engineering solution designed to automate the process of extracting, transforming, and loading (ETL) Capital Bikeshare trip data. The goal is to build a comprehensive data pipeline that handles large-scale data processing, enables real-time data analysis, and provides an interactive platform for data visualization.
+
+This is a Dockerized, end-to-end data engineering project that ingests, processes, and visualizes Capital Bikeshare data. It features a scheduled ETL pipeline, real-time data flagging, partitioned storage in MinIO (S3), and interactive dashboards powered by Metabase.
+
+
+## Project Goals
+
+* Schedule weekly data ingestion and transformation jobs via Airflow
+* Store cleaned datasets as partitioned Parquet files in MinIO
+* Simulate real-time alerts for critical ride patterns
+* Visualize insights with Metabase dashboards
+* Deploy the entire stack using Docker Compose
+
+
+## Tech Stack
+
+| Component            | Tool/Technology                |
+| -------------------- | ------------------------------ |
+| Workflow Management  | Apache Airflow                 |
+| Data Processing      | Pandas                         |
+| Storage              | Local storage, Parquet         |
+| Real-Time Simulation | Python generators              |
+| Database             | PostgreSQL                     |
+| Dashboarding         | Plotly                         |
+| Containerization     | Docker, Docker Compose         |
+
+
+## Project Structure
+
+```
+Docker1/
+├──                  
+│   ├── dags/
+│   │   └── data
+        └──heatmap
+        └──output #where the partition lies
+        └──bikeshare_etl.py
+
+├── postgres/                                            
+├── docker-compose.yml             
+├── Dockerfile                    
+├── .env                               
+└── README.md                         
+
+```
+
+## Workflow
+![Workflow]()
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Data-Epic/bikesharing_etl_adedoyin.git
+cd bikeshare_etl
+```
+
+### 2. Build and Launch Containers
+
+```bash
+docker build -t dev_apache_airflow:2.8.4 .
+docker-compose up --build -d
+```
+
+### 3. Access the Interfaces
+
+| Service    | URL                                            | Default Login                     |
+| ---------- | ---------------------------------------------- | --------------------------------- |
+| Airflow    | [http://localhost:8080](http://localhost:8080) | airflow / airflow                     |
+| PostgreSQL | Host: `localhost:5432`                         | User: airflow / Password: airflow |
+
+
+## Running the ETL Pipeline
+
+1. Go to Airflow UI at `http://localhost:8080`
+2. Trigger the DAG: `bikeshare_etl_pipeline`
+3. Monitor each task and view logs
+
+
+## Real-Time Flagging
+* Simulates alerts for:
+  * Rides over 45 minutes
+  * Casual rides starting at midnight
+* Implemented with a generator inside the DAG
+* Alerts are printed in logs for tracking unusual patterns
+
+
+## Data Visualization (Plotly)
+* Create visualizations
+
+## Output Data
+* Cleaned and transformed `.parquet` files
+* Partitioned by:
+  * `member_casual`
+  * `week_number`
+* Stored inside `dags/output/` and in MinIO
+
+## Showcase
+
+### Airflow Dags
+![Workflow]()
+
+
+### Metabase Dashbord
+![dashboard]()
+
+
