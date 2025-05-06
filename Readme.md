@@ -102,6 +102,7 @@ docker-compose up --build -d
 
 ### Airflow Dags
 ![Workflow](https://github.com/Data-Epic/Ayo-Mike-Bikeshare_ETL/blob/dev/stream_it.png)
+![Workflow](https://github.com/Data-Epic/Ayo-Mike-Bikeshare_ETL/blob/dev/bikeshare_etl_v3-graph.png)
 
 
 
